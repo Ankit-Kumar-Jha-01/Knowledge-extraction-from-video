@@ -49,11 +49,9 @@ Watching long-form lectures, tutorials, and technical presentations to take manu
 
 ## 🖼️ Screenshots & Demo
 
-> *Note: Replace the image paths below with your actual screenshot filenames inside the `assets/` or `screenshots/` directory.*
-
 ### 1. Application / Pipeline Interface
 <div align="center">
-  <img src="./assets/ui_overview.png" alt="Pipeline Interface Overview" width="85%">
+  <img src="./screenshots/uploaded video.png" alt="Pipeline Interface Overview" width="85%">
   <p><em>Video input interface and processing progress view</em></p>
 </div>
 
