@@ -70,6 +70,7 @@ Watching long-form lectures, tutorials, and technical presentations to take manu
   <img src="./screenshots/answers with timestamps.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
   <p><em>Structured notes combining summarized concepts with timestamp-matched screenshots</em></p>
 </div>
+
 ---
 
 ## ⚙️ Requirements
