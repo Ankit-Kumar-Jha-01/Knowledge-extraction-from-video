@@ -57,16 +57,19 @@ Watching long-form lectures, tutorials, and technical presentations to take manu
 
 ### 2. Extracted Keyframes & Slide Detection
 <div align="center">
-  <img src="./assets/extracted_keyframes.png" alt="Extracted Keyframe Screenshots" width="85%">
+  <img src="./screenshots/steps for processing video.png" alt="Extracted Keyframe Screenshots" width="85%">
   <p><em>Automatically captured slide transitions and visual diagrams</em></p>
 </div>
 
 ### 3. Final Generated Knowledge Document
 <div align="center">
-  <img src="./assets/generated_notes_preview.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
+  <img src="./screenshots/general questions.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
   <p><em>Structured notes combining summarized concepts with timestamp-matched screenshots</em></p>
 </div>
-
+<div align="center">
+  <img src="./screenshots/answers with timestamps.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
+  <p><em>Structured notes combining summarized concepts with timestamp-matched screenshots</em></p>
+</div>
 ---
 
 ## ⚙️ Requirements
