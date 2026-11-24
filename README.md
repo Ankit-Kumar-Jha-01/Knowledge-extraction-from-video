@@ -226,6 +226,11 @@ python app.py --input "input_videos/sample_lecture.mp4" --output "output/"
 
 ---
 
+
+## 👤 Author
+
+* **Ankit Kumar Jha** - [GitHub Profile](https://github.com/Ankit-Kumar-Jha-01) | [LinkedIn](https://www.linkedin.com/in/ankit-kumar-jhaa)
+
 <div align="center">
 Built for automated multimodal learning and video knowledge extraction
 </div>
