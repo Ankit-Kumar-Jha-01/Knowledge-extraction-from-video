@@ -119,7 +119,7 @@ Video-Knowledge-Extraction/
 
 ## 🏗️ Architecture Pipeline
 
-```text
+```
 [MP4 Video Upload]
         │
         ├──► Faster-Whisper ──────► Audio Transcript (Timestamps)
@@ -139,7 +139,7 @@ Video-Knowledge-Extraction/
        Gemini Grounded Answer + Clickable Timestamps
 
 
----
+```
 
 ## 📊 Data & Inputs
 
