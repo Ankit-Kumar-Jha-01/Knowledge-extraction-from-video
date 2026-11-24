@@ -117,6 +117,28 @@ Video-Knowledge-Extraction/
 └── README.md                              # Top-level project documentation
 ```
 
+## 🏗️ Architecture Pipeline
+
+```text
+[MP4 Video Upload]
+        │
+        ├──► Faster-Whisper ──────► Audio Transcript (Timestamps)
+        │
+        └──► Gemini Vision API ───► Visual Scene Understanding
+                    │
+                    ▼
+       Unified Multimodal Knowledge Base
+                    │
+                    ▼
+       Semantic Chunking + all-MiniLM-L6-v2 Embeddings
+                    │
+                    ▼
+       Cosine Similarity Search (Top-3 Chunks)
+                    │
+                    ▼
+       Gemini Grounded Answer + Clickable Timestamps
+
+
 ---
 
 ## 📊 Data & Inputs
@@ -208,23 +230,3 @@ python app.py --input "input_videos/sample_lecture.mp4" --output "output/"
 Built for automated multimodal learning and video knowledge extraction
 </div>
 
-## 🏗️ Architecture Pipeline
-
-```text
-[MP4 Video Upload]
-        │
-        ├──► Faster-Whisper ──────► Audio Transcript (Timestamps)
-        │
-        └──► Gemini Vision API ───► Visual Scene Understanding
-                    │
-                    ▼
-       Unified Multimodal Knowledge Base
-                    │
-                    ▼
-       Semantic Chunking + all-MiniLM-L6-v2 Embeddings
-                    │
-                    ▼
-       Cosine Similarity Search (Top-3 Chunks)
-                    │
-                    ▼
-       Gemini Grounded Answer + Clickable Timestamps
