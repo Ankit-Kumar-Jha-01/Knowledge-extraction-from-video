@@ -46,31 +46,58 @@ Watching long-form lectures, tutorials, and technical presentations to take manu
 | Knowledge Output | Structured Study Guide (`output/notes.md` & `.pdf`) | Chronological markdown notes with inline screenshots aligned to topic timestamps |
 
 ---
-
 ## 🖼️ Screenshots & Demo
 
-### 1. Application / Pipeline Interface
 <div align="center">
-  <img src="./screenshots/uploaded video.png" alt="Pipeline Interface Overview" width="85%">
-  <p><em>Video input interface and processing progress view</em></p>
+
+### 1️⃣ Video Upload & Processing Pipeline
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./screenshots/uploaded%20video.png" alt="Video Upload Interface" width="100%" />
+      <br />
+      <sub><b>Step 1 — Video Input:</b> Upload local video files directly through the dark-themed Streamlit interface</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./screenshots/steps%20for%20processing%20video.png" alt="Processing Pipeline Steps" width="100%" />
+      <br />
+      <sub><b>Step 2 — Multimodal Extraction:</b> Live progress tracking across audio transcription, frame extraction, and embedding generation</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+### 2️⃣ Interactive Q&A & Timestamped Retrieval
+
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./screenshots/general%20questions.png" alt="General Video Q&A" width="100%" />
+      <br />
+      <sub><b>Semantic Q&A:</b> Ask natural-language questions synthesized from both spoken audio and visual frames</sub>
+    </td>
+    <td align="center" width="50%">
+      <img src="./screenshots/answers%20with%20timestamps.png" alt="Timestamp-Grounded Answers" width="100%" />
+      <br />
+      <sub><b>Exact Timestamp Citations:</b> Every generated answer points back to the exact video moments where the concept appears</sub>
+    </td>
+  </tr>
+</table>
+
 </div>
 
-### 2. Extracted Keyframes & Slide Detection
-<div align="center">
-  <img src="./screenshots/steps for processing video.png" alt="Extracted Keyframe Screenshots" width="85%">
-  <p><em>Automatically captured slide transitions and visual diagrams</em></p>
-</div>
+<details>
+<summary>🔍 <b>Click to view full-resolution screenshots</b></summary>
+<br />
 
-### 3. Final Generated Knowledge Document
-<div align="center">
-  <img src="./screenshots/general questions.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
-  <p><em>Structured notes combining summarized concepts with timestamp-matched screenshots</em></p>
-</div>
-<div align="center">
-  <img src="./screenshots/answers with timestamps.png" alt="Final Markdown Notes with Inline Screenshots" width="85%">
-  <p><em>Structured notes combining summarized concepts with timestamp-matched screenshots</em></p>
-</div>
+- **Video Upload Interface:** ![Uploaded Video](./screenshots/uploaded%20video.png)
+- **Processing Pipeline Steps:** ![Processing Steps](./screenshots/steps%20for%20processing%20video.png)
+- **General Video Q&A:** ![General Questions](./screenshots/general%20questions.png)
+- **Timestamped Answers:** ![Timestamped Answers](./screenshots/answers%20with%20timestamps.png)
 
+</details>
 ---
 
 ## ⚙️ Requirements
