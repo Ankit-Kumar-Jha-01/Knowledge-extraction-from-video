@@ -71,7 +71,6 @@ def query_knowledge_base(question: str, video_path: str) -> dict:
     embeddings = np.load(EMBEDDINGS_PATH)
     embedding_model, client = _get_models()
 
-    # 1. Retrieval
     question_embedding = embedding_model.encode([question])
     similarities = cosine_similarity(question_embedding, embeddings)[0]
     top_indices = np.argsort(similarities)[::-1][:3]
@@ -89,7 +88,6 @@ Content:
 -------------------------
 """
 
-    # 2. Augmentation
     prompt = f"""
 You are a helpful assistant that answers questions about a video.
 
@@ -113,7 +111,6 @@ USER QUESTION:
 Write the answer:
 """
 
-    # 3. Generation
     response = client.models.generate_content(
         model="gemini-3.5-flash-lite",
         contents=prompt,
@@ -127,7 +124,6 @@ Write the answer:
             "sources": [],
         }
 
-    # Format clean sources without duplicate "Topic:" labels
     sources = []
     for rank, index in enumerate(top_indices, start=1):
         chunk = chunks[index]
@@ -137,7 +133,6 @@ Write the answer:
         start_time = f"{start // 60:02d}:{start % 60:02d}"
         end_time = f"{end // 60:02d}:{end % 60:02d}"
 
-        # Remove redundant "Topic: <name>" prefix if already inside chunk['text']
         clean_text = chunk["text"].strip()
         topic_prefix = f"Topic: {chunk['topic']}"
         if clean_text.startswith(topic_prefix):

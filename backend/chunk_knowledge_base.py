@@ -1,7 +1,5 @@
-
 import json
 
-# Load the combined knowledge base
 with open("video_knowledge_base.json", "r", encoding="utf-8") as file:
     knowledge_base = json.load(file)
 
@@ -14,7 +12,6 @@ for topic in knowledge_base["topics"]:
 
     segments = topic["transcript_segments"]
 
-    # Divide transcript segments into smaller groups
     for i in range(0, len(segments), CHUNK_SIZE - OVERLAP):
 
         group = segments[i:i + CHUNK_SIZE]
@@ -29,7 +26,6 @@ for topic in knowledge_base["topics"]:
         start_time = group[0]["start"]
         end_time = group[-1]["end"]
 
-        # Use actual spoken content for semantic search
         chunk_text = f"""
 Topic: {topic['title']}
 
@@ -48,7 +44,6 @@ Spoken Content: {transcript_text}
             break
 
 
-# Save all chunks
 with open("video_chunks.json", "w", encoding="utf-8") as file:
     json.dump(chunks, file, indent=4, ensure_ascii=False)
 
